@@ -1,0 +1,17 @@
+.Login {
+    background: linear-gradient(to bottom, #192133, #111826);
+    height: 100vh;
+}
+
+button.loginbutton {
+    width: 40%;
+    min-height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(31, 127, 224, 0.1);
+    border: 2px solid #1a64af;
+    border-radius: 4px;
+    align-self: center;
+    padding: 5,
+}

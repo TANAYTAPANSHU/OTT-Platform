@@ -1,0 +1,8 @@
+.Header {
+    background: linear-gradient(to bottom, #192133, #111826);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center
+}
