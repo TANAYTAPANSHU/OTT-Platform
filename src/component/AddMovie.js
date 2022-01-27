@@ -27,7 +27,7 @@ function AddMovie() {
 
   const submitForm = () => {
     if (movie.name && movie.image && movie.description && movie.category) {
-      console.log("Form submitted");
+
       addData();
     } else {
       console.log("Please fill all the sections");
