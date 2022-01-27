@@ -22,6 +22,7 @@ function Header() {
   const userPhoto = useSelector(selectUserPhoto);
   const userName = useSelector(selectUserName);
     const auth = getAuth();
+    const navigate = useNavigate()
   const dispatch = useDispatch();
   const handleAuth = () => {
    if (userName) {
@@ -32,7 +33,9 @@ function Header() {
       });
     }
   };
-  console.log(userPhoto);
+ const onClick = () =>{
+navigate('/addmovie');
+ }
   return (
     <div className="Header">
       <div style={{ alignSelf: "flex-start" }}>
@@ -44,7 +47,7 @@ function Header() {
         />
       </div>{" "}
       <div className="Header-Left" style={{display:'flex',flexDirection:'row',alignItems:'center' }}>
-      <p>Add Movies</p>
+      <p onClick={onClick}>Add Movies</p>
       <span style={{color:'rgba(255, 254, 254, 0.8)'}} onClick={handleAuth}>LOGOUT</span>
       <Avatar alt={userName} src={userPhoto} />{" "}
       </div>

@@ -1,0 +1,54 @@
+.AddMovie {
+    display: flex;
+    flex-direction: column;
+    height: 85vH;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/react-disney-hotstar.appspot.com/o/login-background.jpg?alt=media&token=f8d6f093-f69e-4315-afb9-f2c62e558519');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+}
+
+.AddMovie>.form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #0f131c;
+    border-radius: 10px;
+}
+
+.AddMovie>.form>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.AddMovie>.form>form>p {
+    margin-block: 5px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.AddMovie>.form>form>input {
+    width: 200px;
+    height: 20px;
+}
+
+select {
+    height: 30px;
+}
+
+.form_sumbit {
+    margin-top: 25px;
+    align-self: center;
+    background-color: #1f80e0;
+    font-size: 14px;
+    color: white;
+    font-weight: '600';
+    font-weight: 600;
+    padding-block: 8px;
+    padding-inline: 60px;
+    border-radius: 4px;
+}
