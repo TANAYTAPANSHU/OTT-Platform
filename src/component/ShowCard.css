@@ -1,0 +1,55 @@
+.ShowCard:hover>.CardImage:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.ShowCard {
+    margin: 10px;
+    position: relative;
+    align-items: 'center';
+}
+
+.ShowCard>.CardImage {
+    border-radius: 4px;
+}
+
+.ShowCard:hover {
+    transform: scale(1.15);
+}
+
+.CardText {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: 'white';
+    bottom: 0;
+}
+
+.ShowCard:hover .CardText {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.CardText p {
+    color: #fff;
+    font-size: 10px;
+    padding-inline: 5px;
+}
+
+.CardText h4 {
+    color: #fff;
+    margin-block: 0px
+}
+
+
+/* @keyframes cardSize {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+} */
