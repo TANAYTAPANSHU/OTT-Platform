@@ -38,7 +38,7 @@ navigate('/addmovie');
  }
   return (
     <div className="Header">
-      <div style={{ alignSelf: "flex-start" }}>
+      <div style={{ alignSelf: "flex-start" }} onClick={() =>{navigate('/')} }>
         <img
           style={{ height: 60, width: 90, objectFit: "contain" }}
           className="brand-logo"

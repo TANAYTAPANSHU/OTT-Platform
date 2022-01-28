@@ -60,36 +60,7 @@ const [carouselData , setCarouselData] = useState([]);
     queryCarousel();
   }, []);
 
-  const carouselImages = [
-    {
-      image:
-        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1836/1101836-h-7217bc694aa9",
-      title: "Anupama",
-      description:
-        "Gautam and Dhara sacrifice a lot to raise his brothers Dev, Shiva and Krish while managing the shop. Will things change once the brothers get married?",
-    },
-    {
-      image:
-        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4364/1094364-h-f8cc4f84b6d7",
-      title: "Anupama",
-      description:
-        "Gautam and Dhara sacrifice a lot to raise his brothers Dev, Shiva and Krish while managing the shop. Will things change once the brothers get married?",
-    },
-    {
-      image:
-        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8773/1028773-h-48170a73363e",
-      title: "Special Ops 1.5",
-      description:
-        "In the race to make the next money-spinning drug, saving lives takes a backseat and people become less than human. Step into the murky world of drug t...",
-    },
-    {
-      image:
-        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/old_images/MOVIE/1756/1000101756/1000101756-h",
-      title: "Special Ops 1.5",
-      description:
-        "In the race to make the next money-spinning drug, saving lives takes a backseat and people become less than human. Step into the murky world of drug t...",
-    },
-  ];
+
   const dimensions = useWindowDimensions();
 
   let imageWidth = dimensions.width * 0.7;
@@ -109,7 +80,9 @@ const [carouselData , setCarouselData] = useState([]);
       <Slider {...settings} className="Slider" style={{}}>
         {" "}
         {carouselData.map((element, index) => {
-          return (
+          if(element.approved)
+          {
+            return (
             <div
               className="CarouselImages"
               key={index}
@@ -156,10 +129,13 @@ const [carouselData , setCarouselData] = useState([]);
                     src={element.image}
                     alt="Disney+&nbsp;Hotstar"
                   />
+                  {console.log(element.approved)}
                 </div>{" "}
               </div>{" "}
             </div>
           );
+          }
+          
         })}{" "}
       </Slider>{" "}
     </div>
