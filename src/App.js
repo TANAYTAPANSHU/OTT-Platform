@@ -14,6 +14,7 @@ import {
 import Home from "./component/Home";
 
 import AddMovie from "./component/AddMovie";
+import VideoPlayer from "./component/VideoPlayer";
 
 function App() {
   const userName = useSelector(selectUserName);
@@ -32,6 +33,7 @@ function App() {
               <Route path="/" element={<Home />} />{" "}
               <Route path="/headerdata" element={<Header />} />{" "}
               <Route path="/addmovie" element={<AddMovie />} />{" "}
+                 <Route path="/videoPlayer" element={<VideoPlayer />} />
             </Routes>{" "}
           </BrowserRouter>{" "}
         </>

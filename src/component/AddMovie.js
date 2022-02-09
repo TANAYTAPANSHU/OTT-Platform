@@ -10,6 +10,7 @@ import {
   setSignOutState,
   selectUserEmail,
 } from "../feature/user/userSlice";
+
 function AddMovie() {
    const userName = useSelector(selectUserName);
    const userEmail = useSelector(selectUserEmail)
