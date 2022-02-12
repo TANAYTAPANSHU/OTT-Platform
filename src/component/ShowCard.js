@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import './ShowCard.css'
+import './ShowCard.css';
+import { Link } from "react-router-dom";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -34,6 +35,11 @@ function ShowCard(props) {
     let imageWidth = dimensions.width*0.14;
  
   return (
+     <Link
+            
+            to={`/player`}
+           
+          >
  <div className="ShowCard" >
                 <img
                   className="CardImage"
@@ -52,6 +58,7 @@ function ShowCard(props) {
                 </div>
              
                 </div>
+                </Link>
   );
 }
 

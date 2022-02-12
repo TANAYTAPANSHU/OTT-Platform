@@ -6,7 +6,7 @@ import "./SliderComponent.css";
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
-
+import { Link } from "react-router-dom";
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -68,6 +68,11 @@ const [carouselData , setCarouselData] = useState([]);
  if(carouselData)
  {
     return (
+       <Link
+            
+            to={`/player`}
+           
+          >
     <div
       className="SliderContainer"
       style={{
@@ -139,6 +144,7 @@ const [carouselData , setCarouselData] = useState([]);
         })}{" "}
       </Slider>{" "}
     </div>
+    </Link>
   );
  }
  else{

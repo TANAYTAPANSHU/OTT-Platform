@@ -33,7 +33,7 @@ function App() {
               <Route path="/" element={<Home />} />{" "}
               <Route path="/headerdata" element={<Header />} />{" "}
               <Route path="/addmovie" element={<AddMovie />} />{" "}
-                 <Route path="/videoPlayer" element={<VideoPlayer />} />
+                 <Route path="/player" element={<VideoPlayer />} />
             </Routes>{" "}
           </BrowserRouter>{" "}
         </>

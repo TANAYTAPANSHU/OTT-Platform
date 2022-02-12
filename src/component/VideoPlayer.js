@@ -4,13 +4,13 @@ import {
   Typography,
   Toolbar,
   Container,
-  makeStyles,
-  withStyles,
+
   Grid,
   IconButton,
   Slider,
   Tooltip,
 } from "@material-ui/core";
+import { makeStyles,  withStyles } from '@material-ui/styles';
 import ReactPlayer from "react-player";
 import FastRewindIcon from "@material-ui/icons/FastRewind";
 import FastForwardIcon from "@material-ui/icons/FastForward";
